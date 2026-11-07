@@ -9,6 +9,12 @@ Andrej Karpathy의 코딩 지침 스킬 하나를 Logent에 제공하는 동적 
 - 본문: upstream `skills/karpathy-guidelines/SKILL.md`를 빌드 때 `plugins/karpathy/SKILL.md`로 모아요.
 - Termux 없이 자산에서 읽어요.
 
+`logent-plugin.json`을 `scripts/plugin-pack.py build --definition logent-plugin.json`의
+공통 정의로 사용해요. 플러그인 key는 `sleepysoong:karpathy`, `dependencies`는 `[]`예요.
+`sleepysoong`는 명시한 publisher 별칭이며 GitHub 인증 계정이나 소유권을 뜻하지 않아요.
+key와 의존성에서 생성한 manifest의 `requires`는 서명 metadata에 포함되고,
+`content-public-key.der.b64`에 고정한 공개키로 서명과 파일 해시를 검증해요.
+
 ## 자산 동기화
 
 upstream `skills/karpathy-guidelines/SKILL.md`를 바꾼 뒤에는 아래 명령으로 플러그인 자산을 갱신해요.

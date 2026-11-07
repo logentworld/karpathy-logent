@@ -1,0 +1,9 @@
+{
+  "id": "com.sleepysoong.logent.karpathy",
+  "key": "sleepysoong:karpathy",
+  "name": "Karpathy Guidelines",
+  "entry": "com.sleepysoong.logent.karpathy.KarpathyPlugin",
+  "dependencies": [],
+  "apiMin": 4,
+  "apiMax": 4
+}
