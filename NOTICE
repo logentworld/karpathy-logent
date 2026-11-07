@@ -1,0 +1,16 @@
+# Karpathy Guidelines Logent 플러그인 변경 고지
+
+## 원본
+
+- 저장소: https://github.com/multica-ai/andrej-karpathy-skills
+- 포함 자산: `skills/karpathy-guidelines/SKILL.md`
+- 라이선스: MIT (원본 저장소 README의 License 항목)
+- 원본 README: `README.upstream.md`
+
+## Logent 변경
+
+- `logent` 브랜치에서만 Android library 플러그인과 패키징 스크립트를 추가했어요.
+- upstream `skills/karpathy-guidelines/SKILL.md`를 수정하지 않고 빌드 때
+  `plugins/karpathy/SKILL.md` 자산으로 복사해 Termux 없이 읽어요.
+- 플러그인 ID는 `com.sleepysoong.logent.karpathy`, 제공 스킬은 `karpathy-guidelines` 하나예요.
+- 플러그인 코드는 GPL-3.0이고 upstream 스킬 본문은 MIT 라이선스를 그대로 따라요.
